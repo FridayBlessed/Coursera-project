@@ -1,7 +1,7 @@
 ## Peer-graded Assignment: Using Microsoft Copilot for Writing HTML, CSS, and JavaScript
 ---------------------------------------------------------------------
 
-### Grading Criteria Overview
+###         Grading Criteria Overview
 
 There are a total of 20 points for this project. 
 
