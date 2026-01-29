@@ -1,68 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bold dark portfolio - HTML, CSS & JavaScript specialist">
+    <title>My Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Poppins:wght@600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Accessible navigation -->
-  <header>
-    <nav aria-label="Main Navigation">
-      <ul>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+    <!-- HEADER -->
+    <header>
+        <nav role="navigation" aria-label="Main navigation">
+            <a href="#home" class="logo" title="Back to top">⚡ Dev</a>
+            <button class="mobile-menu-btn" aria-label="Toggle navigation menu" aria-expanded="false" title="Open navigation menu">
+                ≡
+            </button>
+            <ul class="nav-links">
+                <li><a href="#projects" title="View featured projects">Projects</a></li>
+                <li><a href="#contact" title="Contact form">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <!-- About Section -->
-  <section id="about">
-    <h1>Welcome to My Portfolio</h1>
-    <img src="profile.jpg" alt="Portrait of [Your Name]" width="200">
-    <p>Hello! I’m [Blessed Friday], a web developer passionate about accessible and responsive design.</p>
-  </section>
+    <!-- HERO -->
+    <section class="hero" id="home" role="banner" aria-label="Hero section with introduction">
+        <div class="hero-content">
+            <h1>Creative Developer</h1>
+            <p>Crafting stunning digital experiences with pure HTML, CSS & JavaScript</p>
+            
+            <div class="tech-stack" role="group" aria-label="Technology stack">
+                <div class="tech-badge" role="img" aria-label="HTML5 markup language">HTML5</div>
+                <div class="tech-badge" role="img" aria-label="CSS3 styling and animations">CSS3</div>
+                <div class="tech-badge" role="img" aria-label="JavaScript programming language">JavaScript</div>
+            </div>
 
-  <!-- Projects Section -->
-  <section id="projects">
-    <h2>My Projects</h2>
-    <div class="project-card">
-      <img src="project1.png" alt="Screenshot of Project 1">
-      <h3>Project 1</h3>
-      <p>A brief description of the project.</p>
-      <button class="details-btn">View Details</button>
-    </div>
-    <div class="project-card">
-      <img src="project2.png" alt="Screenshot of Project 2">
-      <h3>Project 2</h3>
-      <p>A brief description of the project.</p>
-      <button class="details-btn">View Details</button>
-    </div>
-  </section>
+            <div class="cta-buttons" role="group" aria-label="Call to action buttons">
+                <button class="btn" data-scroll="projects" title="Scroll to projects section">View Work</button>
+                <button class="btn btn-secondary" data-scroll="contact" title="Scroll to contact form">Get In Touch</button>
+            </div>
+        </div>
+    </section>
 
-  <!-- Contact Section -->
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <form aria-label="Contact Form">
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required>
+    <!-- PROJECTS -->
+    <section id="projects" class="projects" aria-label="Featured projects section">
+        <h2 class="section-title">Featured Work</h2>
+        <div class="projects-grid" role="region" aria-label="Project portfolio grid">
+            <article class="project-card" role="article">
+                <div class="project-icon" role="img" aria-label="Cryptocurrency icon">💰</div>
+                <h3 class="project-title">Crypto Dashboard</h3>
+                <p class="project-description">Real-time cryptocurrency tracking with interactive charts and price alerts. Pure vanilla JavaScript with responsive design.</p>
+                <div class="project-tech" role="group" aria-label="Technologies: HTML5, CSS3, JavaScript">
+                    <span class="tech-label">HTML5</span>
+                    <span class="tech-label">CSS3</span>
+                    <span class="tech-label">JavaScript</span>
+                </div>
+                <a href="#" class="project-link" title="View Crypto Dashboard project details">View Project →</a>
+            </article>
 
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
+            <article class="project-card" role="article">
+                <div class="project-icon" role="img" aria-label="Art palette icon">🎨</div>
+                <h3 class="project-title">Portfolio Generator</h3>
+                <p class="project-description">Dynamic portfolio builder with drag-and-drop functionality and custom themes. Built entirely with vanilla JavaScript.</p>
+                <div class="project-tech" role="group" aria-label="Technologies: HTML5, CSS3, JavaScript">
+                    <span class="tech-label">HTML5</span>
+                    <span class="tech-label">CSS3</span>
+                    <span class="tech-label">JavaScript</span>
+                </div>
+                <a href="#" class="project-link" title="View Portfolio Generator project details">View Project →</a>
+            </article>
 
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" required></textarea>
+            <article class="project-card" role="article">
+                <div class="project-icon" role="img" aria-label="Game controller icon">🎮</div>
+                <h3 class="project-title">Game Hub</h3>
+                <p class="project-description">Interactive web games including snake, tetris, and memory games. Canvas API and pure JavaScript implementation.</p>
+                <div class="project-tech" role="group" aria-label="Technologies: HTML5, CSS3, JavaScript">
+                    <span class="tech-label">HTML5</span>
+                    <span class="tech-label">CSS3</span>
+                    <span class="tech-label">JavaScript</span>
+                </div>
+                <a href="#" class="project-link" title="View Game Hub project details">View Project →</a>
+            </article>
 
-      <button type="submit">Send</button>
-    </form>
-  </section>
+            <article class="project-card" role="article">
+                <div class="project-icon" role="img" aria-label="Bar chart icon">📊</div>
+                <h3 class="project-title">Analytics Tool</h3>
+                <p class="project-description">Advanced data visualization dashboard with filterable datasets and export functionality.</p>
+                <div class="project-tech" role="group" aria-label="Technologies: HTML5, CSS3, JavaScript">
+                    <span class="tech-label">HTML5</span>
+                    <span class="tech-label">CSS3</span>
+                    <span class="tech-label">JavaScript</span>
+                </div>
+                <a href="#" class="project-link" title="View Analytics Tool project details">View Project →</a>
+            </article>
 
-  <footer class="f2" >
-    <p class="f1">&copy; Blessed Friday, 2026 My Portfolio</p>
-  </footer>
+            <article class="project-card" role="article">
+                <div class="project-icon" role="img" aria-label="Music note icon">🎵</div>
+                <h3 class="project-title">Music Player</h3>
+                <p class="project-description">Feature-rich music player with playlist management, visualizer, and keyboard controls.</p>
+                <div class="project-tech" role="group" aria-label="Technologies: HTML5, CSS3, JavaScript">
+                    <span class="tech-label">HTML5</span>
+                    <span class="tech-label">CSS3</span>
+                    <span class="tech-label">JavaScript</span>
+                </div>
+                <a href="#" class="project-link" title="View Music Player project details">View Project →</a>
+            </article>
 
-  <script src="script.js"></script>
+            <article class="project-card" role="article">
+                <div class="project-icon" role="img" aria-label="Globe and weather icon">🌐</div>
+                <h3 class="project-title">Weather App</h3>
+                <p class="project-description">Real-time weather application with geolocation, multi-city search, and beautiful animations.</p>
+                <div class="project-tech" role="group" aria-label="Technologies: HTML5, CSS3, JavaScript">
+                    <span class="tech-label">HTML5</span>
+                    <span class="tech-label">CSS3</span>
+                    <span class="tech-label">JavaScript</span>
+                </div>
+                <a href="#" class="project-link" title="View Weather App project details">View Project →</a>
+            </article>
+        </div>
+    </section>
+
+    <!-- CONTACT FORM -->
+    <section id="contact" class="contact" aria-label="Contact form section">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="form-container">
+            <div class="form-success" id="successMessage" role="status" aria-live="polite" aria-label="Form submission status">
+                ✓ Message sent successfully! I'll be in touch soon.
+            </div>
+            
+            <form id="contactForm" novalidate aria-label="Contact form for sending messages">
+                <div class="form-group">
+                    <label for="name">Full Name <span aria-label="required field">*</span></label>
+                    <input 
+                        type="text" 
+                        id="name" 
+                        name="name" 
+                        placeholder="John Doe"
+                        required
+                        aria-label="Your full name"
+                        aria-required="true"
+                        aria-describedby="nameError"
+                    >
+                    <div class="form-error" id="nameError" role="alert" aria-live="assertive"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address <span aria-label="required field">*</span></label>
+                    <input 
+                        type="email" 
+                        id="email" 
+                        name="email" 
+                        placeholder="john@example.com"
+                        required
+                        aria-label="Your email address"
+                        aria-required="true"
+                        aria-describedby="emailError"
+                    >
+                    <div class="form-error" id="emailError" role="alert" aria-live="assertive"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Subject <span aria-label="required field">*</span></label>
+                    <input 
+                        type="text" 
+                        id="subject" 
+                        name="subject" 
+                        placeholder="Project Inquiry"
+                        required
+                        aria-label="Message subject"
+                        aria-required="true"
+                        aria-describedby="subjectError"
+                    >
+                    <div class="form-error" id="subjectError" role="alert" aria-live="assertive"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message <span aria-label="required field">*</span></label>
+                    <textarea 
+                        id="message" 
+                        name="message" 
+                        placeholder="Tell me about your project..."
+                        required
+                        aria-label="Your message (maximum 1000 characters)"
+                        aria-required="true"
+                        aria-describedby="messageError"
+                    ></textarea>
+                    <div class="form-error" id="messageError" role="alert" aria-live="assertive"></div>
+                </div>
+
+                <button type="submit" class="submit-btn" id="submitBtn" title="Submit contact form" aria-label="Send message button">Send Message</button>
+                <div class="form-status" id="formStatus" role="status" aria-live="polite" aria-label="Form submission status"></div>
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer role="contentinfo" aria-label="Footer information">
+        <p>&copy; 2026 Friday Blessed. Built with <span title="Hypertext Markup Language 5">HTML5</span>, <span title="Cascading Style Sheets 3">CSS3</span> &amp; <span title="JavaScript programming language">JavaScript</span></p>
+    </footer>
+<script src="script.js"></script>
+  
 </body>
 </html>
